@@ -227,6 +227,8 @@ nav .right a span{
 
 .contact-section h2{
     font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .contact-section .group{
@@ -245,11 +247,16 @@ nav .right a span{
     flex-direction: column;
 }
 
+.contact-section .group form h3{
+    text-align: center;
+}
+
 
 .contact-section .group form input,
 .contact-section .group form textarea{
     font-family: 'Poppins',sans-serif;
-    border: 2px solid blue;
+    border: 2px solid rgba(0, 0, 0, 0.301);
+    border-radius: 12px;
     background-color: transparent;
     padding: 10px;
     margin-bottom: 15px;
@@ -261,7 +268,8 @@ nav .right a span{
     font-size: 16px;
     font-family: 'Poppins',sans-serif;
     color: #fff;
-    background-color: var(--link-color);
+    background-color: rgba(0, 0, 0, 0.635);
+    border-radius: 12px;
     border: none;
     height: 50px;
     cursor: pointer;
@@ -269,7 +277,9 @@ nav .right a span{
 }
 
 .contact-section .group form button:hover{
-    filter: brightness(.9);
+    filter: brightness(1);
+    background-color: black;
+    border-radius: 10px;
 }
 
 @media (max-width:740px){

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="icon" href="images/logo1 .png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -197,28 +198,40 @@
             <h2>Contact</h2>
             <div class="group">
                 <div class="text">
-                    Get in Touch
                     Thank you for visiting my portfolio. If you have any inquiries, collaboration opportunities, or
                     require further information, please feel free to contact me using the form right here or via email.
                     I will respond at the earliest convenience.
                 </div>
 
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLScMq_5TDxl5pNqJFYzvuTAck3VA9cA2UTHi44XkktI8k97VxA/viewform?usp=sf_link" method="POST" target="_blank">
+                <form action="https://api.web3forms.com/submit" method="POST" onsubmit="clearValue(event)">
+                    <h3>Get in Touch</h3>
+                    <input type="hidden" name="access_key" value="ab79aa52-bf57-4318-b8e6-6144a8817953">
                     <label for="name">Name</label>
-                    <input name="1.entry.366340186" type="text" id="name" required>
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Email</label>
-                    <input name="entry.767901256
-                    " type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
 
                     <label for="message">Message</label>
-                    <textarea name="entry.1287068425" id="message" cols="30" rows="10" required></textarea>
+                    <textarea id="message" name="message" cols="30" rows="10" required></textarea>
 
                     <button type="submit">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
+
+    <script>
+        var name = document.getElementById("#name");
+        var email=document.getElementById("#email");
+        var message = document.getElementById("#message")
+
+        function clearValue(event){
+            setTimeout(()=>{
+                event.target.reset();
+            },100);
+        }
+        </script>
 </body>
 
 </html>
