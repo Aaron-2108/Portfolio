@@ -313,19 +313,6 @@ nav .right a span{
 
 }
 
-@media (max-width:550px){
-
-    .hero-section{
-        padding:0 20px;
-    }
-    
-    .hero-section .text{
-        font-size: 16px;
-    }
-
-    .hero-section .text .links{
-        font-size: 16px;
-}
  @media (max-width:600px){
     /* Nav bar */
     nav{
@@ -353,7 +340,11 @@ nav .right a span{
     }
 
     .hero-section .text{
-        font-size: 30px;
+        font-size: 20px;
+    }
+
+    .hero-section .text .links a{
+        font-size: 16px;
     }
 
     /* SECTION 2:Skill section */
@@ -377,4 +368,5 @@ nav .right a span{
     .contact-section {
         padding: 0 20px;
     }
+
 } 
